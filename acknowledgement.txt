@@ -1,0 +1,4 @@
+Much thanks to armoner24, without whose code I will spend a much longer time on understanding and coding.(Though his/her code won't compile on my computer:)
+
+The repository is the link below.
+https://github.com/armoner24/Knapsack-by-ACO

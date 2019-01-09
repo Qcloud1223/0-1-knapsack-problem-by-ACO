@@ -1,0 +1,14 @@
+If you are new to ACO, this document will help you understand the algorithm and the code better.
+
+ACO is first used to discuss the TSP problem, which is a NP-complete problem, meaning it has no polynomial solution right now.
+So the researchers want to find a way to get its approximate solution both quick and good.
+
+ACO is an algorithm that emulate a colony of ants. Ant can release pheromone to help lessen its co-workers' workload.
+Basically, ants tend to step on the way that has most pheromone on, that's how this algorithm decide a road is better in the TSP problem.
+But in the 0/1 knapsack problem, every item is independent and thus does not has the concept of 'road'.
+So in this particular problem, we put the ants on the items.
+In each loop, every ant has a probability to move to another item.
+The probability is defined by two factors: the remaining pheromone and the value/weight. The two factors work together, following a certain formula and you can get it easily on a more professional document.
+After the move of every ant, we need to calculate the pheromone every ant release on the new item, and the 'Dtau' symbols that.
+Plus, after every iteration, the pheromone will also becomes less, defined by a factor rho, describe how it decays.
+The algorithm ends after iteration time reach the set number.
